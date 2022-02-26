@@ -5,5 +5,5 @@ Copying and then trying to improve the HashTable implementation from Tsoding
 
 
 ``` console
-cargo run --release
+$ cargo run --release
 ```
