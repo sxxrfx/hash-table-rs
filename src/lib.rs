@@ -44,7 +44,7 @@ pub mod hash_table {
         Value: Clone + Default + Debug,
     {
         pub fn new() -> Self {
-            const INITIAL_CAPACITY: usize = 11;
+            const INITIAL_CAPACITY: usize = 8;
             Self {
                 elements: vec![HashElement::<_, _>::default(); INITIAL_CAPACITY],
                 taken_count: 0,
@@ -54,7 +54,7 @@ pub mod hash_table {
         pub fn extend(&mut self) {
             assert!(self.elements.len() > 0);
             let mut new_self = Self {
-                elements: vec![HashElement::<_, _>::default(); self.elements.len() * 2 + 1],
+                elements: vec![HashElement::<_, _>::default(); self.elements.len() * 2],
                 taken_count: 0,
             };
             for cell in self.elements.iter() {
