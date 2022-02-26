@@ -3,7 +3,7 @@ Copying and then trying to improve the HashTable implementation from Tsoding
 
 ## Running the Benchmark
 
-``` shell
+
+``` console
 cargo run --release
 ```
-    
